@@ -17,6 +17,9 @@ set shiftwidth=4
 set softtabstop=4
 set tabstop=4
 
+" Wrap text instead of being on one line
+set lbr
+
 " Disable all kinds of smartness for pasting
 set pastetoggle=<F2>
 
