@@ -4,6 +4,7 @@ set nocompatible
 " Loads modules from the bundle/ directory
 filetype off
 call pathogen#runtime_append_all_bundles()
+call pathogen#helptags()
 filetype plugin indent on
 
 " Hide buffers instead of closing
