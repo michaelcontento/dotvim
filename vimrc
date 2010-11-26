@@ -111,3 +111,6 @@ map <leader>w <C-w>v<C-w>l
 
 map <c-Left> <C-w>h
 map <c-Right> <C-w>l
+
+" FuzzyFinder
+map <leader>t :FuzzyFinderFile<CR>
