@@ -24,6 +24,7 @@ set lbr
 set pastetoggle=<F2>
 
 " Basic options
+syntax on
 set backspace=indent,eol,start
 set encoding=utf-8
 set hidden
