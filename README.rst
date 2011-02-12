@@ -4,15 +4,17 @@ dotvim
 Installation
 ------------
 
+Backup your current configuration::
+
+    if [ -e ~/.vim    ]; then mv ~/.vim    ~/.vim.old;    fi
+    if [ -e ~/.vimrc  ]; then mv ~/.vimrc  ~/.vimrc.old;  fi
+    if [ -e ~/.gvimrc ]; then mv ~/.gvimrc ~/.gvimrc.old; fi
+
 Clone this repository::
 
-    if [ -e ~/.vim ]; then mv ~/.vim ~/.vim.old; fi
     git clone git@github.com:michaelcontento/dotvim.git ~/.vim
 
 Create symlinks::
-
-    if [ -e ~/.vimrc  ]; then mv ~/.vimrc  ~/.vimrc.old;  fi
-    if [ -e ~/.gvimrc ]; then mv ~/.gvimrc ~/.gvimrc.old; fi
 
     ln -s ~/.vim/vimrc  ~/.vimrc
     ln -s ~/.vim/gvimrc ~/.gvimrc
@@ -29,7 +31,7 @@ installed automatically (thanks to vim-addon-manager).
 Uninstall
 ---------
 
-Remove all new files and restore your old files::
+Just restore your old backup files::
 
     rm -rf ~/.vim
     if [ -e ~/.vim.old    ]; then mv ~/.vim.old    ~/.vim;    fi
