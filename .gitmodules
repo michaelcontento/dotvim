@@ -1,6 +1,3 @@
-[submodule "bundle/fugitive"]
-	path = bundle/fugitive
-	url = http://github.com/tpope/vim-fugitive.git
-[submodule "bundle/fuzzyfinder"]
-	path = bundle/fuzzyfinder
-	url = https://github.com/marcelinollano/vim-fuzzyfinder.git
+[submodule "vim-addons/vim-addon-manager"]
+    path = vim-addons/vim-addon-manager
+    url = git://github.com/MarcWeber/vim-addon-manager.git
