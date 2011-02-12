@@ -1,3 +1,7 @@
+" Install additional scripts via vim-addon-manager
+set runtimepath+=~/.vim/vim-addons/vim-addon-manager
+call scriptmanager#Activate(['FuzzyFinder', 'The_NERD_tree'])
+
 " This must be first, because it changes other options as side effect
 set nocompatible
 
@@ -95,5 +99,6 @@ map <leader>w <C-w>v<C-w>l
 map <c-Left> <C-w>h
 map <c-Right> <C-w>l
 
-" FuzzyFinder
-map <leader>t :FuzzyFinderFile<CR>
+" Mappings for all file navigation plugins
+map <leader>t :NERDTreeToggle<CR>
+map <leader>y :FufFile<CR>
