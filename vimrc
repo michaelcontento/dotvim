@@ -1,6 +1,6 @@
 " Install additional scripts via vim-addon-manager
 set runtimepath+=~/.vim/vim-addons/vim-addon-manager
-call scriptmanager#Activate(['FuzzyFinder', 'The_NERD_tree'])
+call scriptmanager#Activate(['vimwiki', 'FuzzyFinder', 'The_NERD_tree'])
 
 " This must be first, because it changes other options as side effect
 set nocompatible
@@ -57,15 +57,13 @@ let mapleader=","
 nnoremap Y y$
 
 " Searching
-map <leader><space> :noh<cr>
-nmap <tab> %
+nmap <leader><space> :noh<cr>
 set gdefault
 set hlsearch
 set ignorecase
 set incsearch
 set showmatch
 set smartcase
-vmap <tab> %
 
 " Fuck you, manual key
 nnoremap K <nop>
@@ -77,7 +75,7 @@ nnoremap ; :
 au FocusLost * :wa
 
 " Easier linewise reselection
-map <leader>v V`]
+nmap <leader>v V`]
 
 " Stop using the arrow keys
 "map <up> <nop>
@@ -94,11 +92,14 @@ map <C-h> <C-w>h
 map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
-map <leader>w <C-w>v<C-w>l
 
 map <c-Left> <C-w>h
 map <c-Right> <C-w>l
 
+" Mapping for vimwiki index page
+nmap <leader>W :VimwikiMakeDiaryNote<CR>
+nmap <leader>w :VimwikiIndex<CR>
+
 " Mappings for all file navigation plugins
-map <leader>t :NERDTreeToggle<CR>
-map <leader>y :FufFile<CR>
+nmap <leader>t :NERDTreeToggle<CR>
+nmap <leader>y :FufFile<CR>
