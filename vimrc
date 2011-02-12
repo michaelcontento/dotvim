@@ -22,6 +22,9 @@ set lbr
 " Disable all kinds of smartness for pasting
 set pastetoggle=<F2>
 
+" Enable mouse support
+set mouse=a
+
 " Basic options
 syntax on
 set backspace=indent,eol,start
