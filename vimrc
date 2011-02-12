@@ -1,11 +1,6 @@
 " This must be first, because it changes other options as side effect
 set nocompatible
 
-" Loads modules from the bundle/ directory
-filetype off
-call pathogen#runtime_append_all_bundles()
-filetype plugin indent on
-
 " Hide buffers instead of closing
 set hidden
 
