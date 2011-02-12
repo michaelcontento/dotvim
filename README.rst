@@ -4,12 +4,37 @@ dotvim
 Installation
 ------------
 
+Clone this repository::
+
+    if [ -e ~/.vim ]; then mv ~/.vim ~/.vim.old; fi
     git clone git@github.com:michaelcontento/dotvim.git ~/.vim
-    ln -s ~/.vim/vimrc ~/.vimrc
+
+Create symlinks::
+
+    if [ -e ~/.vimrc  ]; then mv ~/.vimrc  ~/.vimrc.old;  fi
+    if [ -e ~/.gvimrc ]; then mv ~/.gvimrc ~/.gvimrc.old; fi
+
+    ln -s ~/.vim/vimrc  ~/.vimrc
     ln -s ~/.vim/gvimrc ~/.gvimrc
+    
+Switch to ``~/.vim`` and fetch all submodules::
+
     cd ~/.vim
     git submodule init
     git submodule update
+
+When you start VIM for the first time all dependend plugins will be 
+installed automatically (thanks to vim-addon-manager).
+
+Uninstall
+---------
+
+Remove all new files and restore your old files::
+
+    rm -rf ~/.vim
+    if [ -e ~/.vim.old    ]; then mv ~/.vim.old    ~/.vim;    fi
+    if [ -e ~/.vimrc.old  ]; then mv ~/.vimrc.old  ~/.vimrc;  fi
+    if [ -e ~/.gvimrc.old ]; then mv ~/.gvimrc.old ~/.gvimrc; fi
 
 License
 -------
