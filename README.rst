@@ -46,6 +46,8 @@ Configuration in bullet points
 * ``<leader><space>`` stop highlighting the word that was searched for 
 * ``<leader>t`` = NERDTree
 * ``<leader>y`` = FuzzyFile
+* ``<leader>w`` = VimWiki index page
+* ``<leader>W`` = VimWiki diary
 * *To be continued...*
 
 
