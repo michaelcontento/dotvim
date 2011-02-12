@@ -38,6 +38,17 @@ Just restore your old backup files::
     if [ -e ~/.vimrc.old  ]; then mv ~/.vimrc.old  ~/.vimrc;  fi
     if [ -e ~/.gvimrc.old ]; then mv ~/.gvimrc.old ~/.gvimrc; fi
 
+Configuration in bullet points
+------------------------------
+
+* indent with 4 spaces 
+* ``<leader>`` is set to ``,``
+* ``<leader><space>`` stop highlighting the word that was searched for 
+* ``<leader>t`` = NERDTree
+* ``<leader>y`` = FuzzyFile
+* *To be continued...*
+
+
 License
 -------
 
