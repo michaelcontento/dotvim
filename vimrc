@@ -130,7 +130,6 @@ map <c-Right> <C-w>l
 " Configure NERDTree
 let NERDTreeBookmarksFile=$HOME . "/.vim/NERDTreeBookmarks"
 let NERDTreeShowBookmarks=1
-let NERDTreeShowHidden=1
 let NERDTreeQuitOnOpen=1
 
 " Configure TagList
