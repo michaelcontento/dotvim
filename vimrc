@@ -1,6 +1,6 @@
 " Install additional scripts via vim-addon-manager
 set runtimepath+=~/.vim/vim-addons/vim-addon-manager
-call scriptmanager#Activate(['fugitive', 'vimwiki', 'FuzzyFinder', 'The_NERD_tree'])
+call scriptmanager#Activate(['taglist', 'fugitive', 'vimwiki', 'FuzzyFinder', 'The_NERD_tree'])
 
 " This must be first, because it changes other options as side effect
 set nocompatible
@@ -63,7 +63,7 @@ set visualbell
 
 " change the mapleader from \ to ,
 let mapleader=","
-let g:mapleader = ","
+let g:mapleader=","
 
 " Make Y not dumb
 nnoremap Y y$
@@ -127,10 +127,22 @@ map <c-Left> <C-w>h
 map <c-Right> <C-w>l
 
 " Configure NERDTree
-let NERDTreeBookmarksFile = $HOME . "/.vim/NERDTreeBookmarks"
+let NERDTreeBookmarksFile=$HOME . "/.vim/NERDTreeBookmarks"
 let NERDTreeShowBookmarks=1
 let NERDTreeShowHidden=1
 let NERDTreeQuitOnOpen=1
+
+" Configure TagList
+nmap <leader>r :TlistToggle<CR>
+let Tlist_Use_Right_Window=1
+let Tlist_Compact_Format=1
+let Tlist_Exit_OnlyWindow=1
+let Tlist_GainFocus_On_ToggleOpen=1
+let Tlist_File_Fold_Auto_Close=1
+let Tlist_Inc_Winwidth=0
+let Tlist_Close_On_Select=1
+let Tlist_Display_Prototype=0
+let Tlist_Display_Tag_Scope=1
 
 " Mapping for vimwiki index page
 nmap <leader>W :VimwikiMakeDiaryNote<CR>
