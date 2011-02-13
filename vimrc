@@ -1,6 +1,6 @@
 " Install additional scripts via vim-addon-manager
 set runtimepath+=~/.vim/vim-addons/vim-addon-manager
-call scriptmanager#Activate(['taglist', 'fugitive', 'vimwiki', 'FuzzyFinder', 'The_NERD_tree'])
+call scriptmanager#Activate(['MRU', 'taglist', 'fugitive', 'vimwiki', 'FuzzyFinder', 'The_NERD_tree'])
 
 " This must be first, because it changes other options as side effect
 set nocompatible
@@ -152,3 +152,4 @@ nmap <leader>w :VimwikiIndex<CR>
 " Mappings for all file navigation plugins
 nmap <leader>t :NERDTreeToggle<CR>
 nmap <leader>y :FufFile<CR>
+nmap <leader>u :MRU<CR>
