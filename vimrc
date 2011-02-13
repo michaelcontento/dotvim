@@ -126,6 +126,12 @@ map <C-l> <C-w>l
 map <c-Left> <C-w>h
 map <c-Right> <C-w>l
 
+" Configure NERDTree
+let NERDTreeBookmarksFile = $HOME . "/.vim/NERDTreeBookmarks"
+let NERDTreeShowBookmarks=1
+let NERDTreeShowHidden=1
+let NERDTreeQuitOnOpen=1
+
 " Mapping for vimwiki index page
 nmap <leader>W :VimwikiMakeDiaryNote<CR>
 nmap <leader>w :VimwikiIndex<CR>
