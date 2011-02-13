@@ -29,7 +29,9 @@ set mouse=a
 set guioptions-=T
 
 " When vimrc is edited, reload it
-autocmd! bufwritepost vimrc source ~/.vim_runtime/vimrc
+if has("autocmd")
+    autocmd bufwritepost .vimrc source $MYVIMRC
+endif
 
 " Basic options
 syntax on
