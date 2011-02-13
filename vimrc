@@ -90,6 +90,10 @@ cmap w!! w !sudo tee % >/dev/null
 " Easier linewise reselection
 nmap <leader>v V`]
 
+" Fast quit
+cmap Q qall
+cmap Q! qall!
+
 " Stop using the arrow keys
 "map <up> <nop>
 "map <down> <nop>
