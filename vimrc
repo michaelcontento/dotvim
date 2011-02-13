@@ -58,6 +58,7 @@ set visualbell
 
 " change the mapleader from \ to ,
 let mapleader=","
+let g:mapleader = ","
 
 " Make Y not dumb
 nnoremap Y y$
