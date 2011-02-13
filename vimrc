@@ -77,6 +77,11 @@ set incsearch
 set showmatch
 set smartcase
 
+" Turn on "very magic" regex status by default for searches.
+" :he /magic for more information
+nnoremap / /\v
+vnoremap / /\v
+
 " Fuck you, manual key
 nnoremap K <nop>
 
