@@ -150,5 +150,5 @@ nmap <leader>w :VimwikiIndex<CR>
 
 " Mappings for all file navigation plugins
 nmap <leader>t :NERDTreeToggle<CR>
-nmap <leader>y :FufFile<CR>
+nmap <leader>y :FufFileWithCurrentBufferDir<CR>
 nmap <leader>u :MRU<CR>
