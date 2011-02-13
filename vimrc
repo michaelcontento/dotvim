@@ -1,6 +1,6 @@
 " Install additional scripts via vim-addon-manager
 set runtimepath+=~/.vim/vim-addons/vim-addon-manager
-call scriptmanager#Activate(['SuperTab_continued.', 'delimitMate', 'MRU', 'taglist', 'fugitive', 'vimwiki', 'FuzzyFinder', 'The_NERD_tree'])
+call scriptmanager#Activate(['PIV', 'SuperTab_continued.', 'delimitMate', 'MRU', 'taglist', 'fugitive', 'vimwiki', 'FuzzyFinder', 'The_NERD_tree'])
 
 " This must be first, because it changes other options as side effect
 set nocompatible
@@ -126,6 +126,9 @@ map <C-l> <C-w>l
 
 map <c-Left> <C-w>h
 map <c-Right> <C-w>l
+
+" Configure PIV
+let g:DisableAutoPHPFolding=1
 
 " Configure NERDTree
 let NERDTreeBookmarksFile=$HOME . "/.vim/NERDTreeBookmarks"
