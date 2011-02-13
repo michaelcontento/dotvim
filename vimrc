@@ -40,7 +40,7 @@ set laststatus=2
 set scrolloff=3
 set showcmd
 set showmode
-set ttyfast
+set ttyfast   
 set wildmenu
 set wildmode=list:longest
 
@@ -99,6 +99,12 @@ nmap <leader>v V`]
 " And make j,k work
 nnoremap j gj
 nnoremap k gk
+
+" Mac bindings for home/end
+map <C-a> 0
+map <C-e> g$
+imap <C-a> <Esc>0i
+imap <C-e> <Esc>g$i
 
 " Easy buffer navigation
 map <C-h> <C-w>h
