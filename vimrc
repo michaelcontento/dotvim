@@ -77,6 +77,9 @@ nnoremap ; :
 " Save when losing focus
 au FocusLost * :wa
 
+" Sudo write
+cmap w!! w !sudo tee % >/dev/null
+
 " Easier linewise reselection
 nmap <leader>v V`]
 
