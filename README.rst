@@ -41,15 +41,28 @@ Just restore your old backup files::
 Configuration in bullet points
 ------------------------------
 
-* indent with 4 spaces 
 * ``<leader>`` is set to ``,``
-* ``<leader><space>`` stop highlighting the word that was searched for 
-* ``<leader>t`` = NERDTree
-* ``<leader>y`` = FuzzyFile
-* ``<leader>w`` = VimWiki index page
-* ``<leader>W`` = VimWiki diary
+* Following leader mappings:
+    * ``<leader><space>`` stop highlighting the word that was searched for 
+    * ``<leader>t`` = NERDTree
+    * ``<leader>y`` = FuzzyFile
+    * ``<leader>u`` = MRU 
+    * ``<leader>r`` = TagList
+    * ``<leader>w`` = VimWiki index page
+    * ``<leader>W`` = VimWiki diary
+    * ``<leader>v`` = Reselect last selection
+* Some very usefull key mappings: 
+    * ``;`` to ``:``
+    * Disable ``K``
+    * ``j`` to ``gj``
+    * ``k`` to ``gk``
+    * *To be continued ...*
+* Indent with 4 spaces
+* Pastetoggle on ``<F2>``
+* Enable Macs ``Ctr+a`` and ``Crl+e`` shortcuts
+* Write through ``sudo`` via ``w!!``
+* ``Q`` and ``Q!`` for ``qall`` and ``qall!``
 * *To be continued...*
-
 
 License
 -------
