@@ -28,6 +28,9 @@ set mouse=a
 " Remove the toolbar in vim GUIs
 set guioptions-=T
 
+" When vimrc is edited, reload it
+autocmd! bufwritepost vimrc source ~/.vim_runtime/vimrc
+
 " Basic options
 syntax on
 set backspace=indent,eol,start
