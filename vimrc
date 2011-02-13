@@ -25,6 +25,9 @@ set pastetoggle=<F2>
 " Enable mouse support
 set mouse=a
 
+" Remove the toolbar in vim GUIs
+set guioptions-=T
+
 " Basic options
 syntax on
 set backspace=indent,eol,start
