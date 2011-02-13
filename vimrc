@@ -76,6 +76,7 @@ set ignorecase
 set incsearch
 set showmatch
 set smartcase
+set highlight=lub
 
 " Turn on "very magic" regex status by default for searches.
 " :he /magic for more information
