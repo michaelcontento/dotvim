@@ -25,8 +25,9 @@ set pastetoggle=<F2>
 " Enable mouse support
 set mouse=a
 
-" Remove the toolbar in vim GUIs
+" Some stuff for MacVim
 set guioptions-=T
+set guifont=Monaco:h14
 
 " When vimrc is edited, reload it
 if has("autocmd")
