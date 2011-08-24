@@ -12,7 +12,7 @@ Backup your current configuration::
 
 Clone this repository::
 
-    git clone git@github.com:michaelcontento/dotvim.git ~/.vim
+    git clone --recursive git@github.com:michaelcontento/dotvim.git ~/.vim
 
 Create symlinks::
 
