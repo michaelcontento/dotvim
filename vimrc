@@ -1,6 +1,6 @@
 " Install additional scripts via vim-addon-manager
-"set runtimepath+=~/.vim/vim-addons/vim-addon-manager
-"call scriptmanager#Activate(['snipMate', 'PIV', 'SuperTab_continued.', 'delimitMate', 'MRU', 'taglist', 'fugitive', 'vimwiki', 'FuzzyFinder', 'The_NERD_tree'])
+set runtimepath+=~/.vim/vim-addons/vim-addon-manager
+call vam#ActivateAddons(['snipmate', 'PIV', 'SuperTab_continued.', 'delimitMate', 'MRU', 'The_NERD_tree', 'taglist', 'fugitive', 'vimwiki', 'FuzzyFinder'])
 
 " This must be first, because it changes other options as side effect
 set nocompatible
@@ -75,7 +75,7 @@ set wildignore=*.swp,*.bak,*.pyc,*.class
 set noerrorbells         
 set number
 set ruler
-"set statusline=%F%m%r%h%w%=%{fugitive#statusline()}\ (%{&ff}/%Y)\ (line\ %l\/%L,\ col\ %c)
+set statusline=%F%m%r%h%w%=%{fugitive#statusline()}\ (%{&ff}/%Y)\ (line\ %l\/%L,\ col\ %c)
 set title                
 set visualbell           
 

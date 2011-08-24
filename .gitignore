@@ -1,2 +1,3 @@
-vim-addons/vim-addon-manager-known-repositories
-/NERDTreeBookmarks
+vim-addons/*
+!vim-addons/vim-addon-manager
+NERDTreeBookmarks
