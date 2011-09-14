@@ -138,12 +138,17 @@ imap <C-e> <Esc>g$i
 
 " Easy buffer navigation
 map <C-h> <C-w>h
+map <C-Left> <C-w>h
 map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
+map <C-Right> <C-w>l
 
-map <c-Left> <C-w>h
-map <c-Right> <C-w>l
+" Easy tab navigation
+map <S-h> :tabnext<CR>
+map <S-Left> :tabnext<CR>
+map <S-l> :tabprevious<CR>
+map <S-Right> :tabprevious<CR>
 
 " Configure PIV
 let g:DisableAutoPHPFolding=1
