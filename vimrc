@@ -62,7 +62,7 @@ call togglebg#map("<F5>")
 set backspace=indent,eol,start
 set encoding=utf-8
 set hidden
-set laststatus=2
+set laststatus=0
 set scrolloff=3
 set showcmd
 set showmode
