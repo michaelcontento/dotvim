@@ -126,12 +126,6 @@ nmap <leader>v V`]
 cmap Q qall
 cmap Q! qall!
 
-" Stop using the arrow keys
-"map <up> <nop>
-"map <down> <nop>
-"map <left> <nop>
-"map <right> <nop>
-
 " And make j,k work
 nnoremap j gj
 nnoremap k gk
