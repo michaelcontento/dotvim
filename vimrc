@@ -1,6 +1,6 @@
 " Install additional scripts via vim-addon-manager
 set runtimepath+=~/.vim/vim-addons/vim-addon-manager
-call vam#ActivateAddons(['snipmate', 'PIV', 'SuperTab_continued.', 'delimitMate', 'MRU', 'The_NERD_tree', 'taglist', 'fugitive', 'vimwiki', 'FuzzyFinder'])
+call vam#ActivateAddons(['Solarized', 'snipmate', 'PIV', 'SuperTab_continued.', 'delimitMate', 'MRU', 'The_NERD_tree', 'taglist', 'fugitive', 'vimwiki', 'FuzzyFinder'])
 
 " This must be first, because it changes other options as side effect
 set nocompatible
@@ -51,8 +51,14 @@ if has("autocmd")
     autocmd bufwritepost .vimrc source $MYVIMRC
 endif
 
-" Basic options
+" Theme options
 syntax on
+set background=dark
+let g:solarized_termtrans=1
+colorscheme solarized
+call togglebg#map("<F5>")
+
+" Basic options
 set backspace=indent,eol,start
 set encoding=utf-8
 set hidden
