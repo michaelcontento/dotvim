@@ -1,6 +1,19 @@
 " Install additional scripts via vim-addon-manager
 set runtimepath+=~/.vim/vim-addons/vim-addon-manager
-call vam#ActivateAddons(['Solarized', 'snipmate', 'PIV', 'SuperTab_continued.', 'delimitMate', 'MRU', 'The_NERD_tree', 'taglist', 'fugitive', 'vimwiki', 'FuzzyFinder'])
+call vam#ActivateAddons(['Solarized', 'SuperTab_continued.', 'delimitMate', 'The_NERD_tree', 'FuzzyFinder'])
+
+" Fix arrow keys in screen/tmux sessions
+if match($TERM, "screen") != -1
+    set term=xterm
+    map OA <Up>
+    map OB <Down>
+    map OC <Right>
+    map OD <Left>
+    map [A <C-Up>
+    map [B <C-Down>
+    map [C <C-Right>
+    map [D <C-Left>
+endif
 
 " This must be first, because it changes other options as side effect
 set nocompatible
@@ -81,7 +94,6 @@ set wildignore=*.swp,*.bak,*.pyc,*.class
 set noerrorbells         
 set number
 set ruler
-set statusline=%F%m%r%h%w%=%{fugitive#statusline()}\ (%{&ff}/%Y)\ (line\ %l\/%L,\ col\ %c)
 set title                
 set visualbell           
 
@@ -150,31 +162,11 @@ map <S-Left> :tabnext<CR>
 map <S-l> :tabprevious<CR>
 map <S-Right> :tabprevious<CR>
 
-" Configure PIV
-let g:DisableAutoPHPFolding=1
-
 " Configure NERDTree
-let NERDTreeBookmarksFile=$HOME . "/.vim/NERDTreeBookmarks"
+let NERDTreeBookmarksFile=$HOME . '/.vim/NERDTreeBookmarks'
 let NERDTreeShowBookmarks=1
 let NERDTreeQuitOnOpen=1
-
-" Configure TagList
-nmap <leader>r :TlistToggle<CR>
-let Tlist_Use_Right_Window=1
-let Tlist_Compact_Format=1
-let Tlist_Exit_OnlyWindow=1
-let Tlist_GainFocus_On_ToggleOpen=1
-let Tlist_File_Fold_Auto_Close=1
-let Tlist_Inc_Winwidth=0
-let Tlist_Close_On_Select=1
-let Tlist_Display_Prototype=0
-let Tlist_Display_Tag_Scope=1
-
-" Mapping for vimwiki index page
-nmap <leader>W :VimwikiMakeDiaryNote<CR>
-nmap <leader>w :VimwikiIndex<CR>
 
 " Mappings for all file navigation plugins
 nmap <leader>t :NERDTreeToggle<CR>
 nmap <leader>y :FufFileWithCurrentBufferDir<CR>
-nmap <leader>u :MRU<CR>
