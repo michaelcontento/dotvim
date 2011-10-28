@@ -59,6 +59,12 @@ set mouse=a
 set guioptions-=T
 set guifont=Monaco:h14
 
+" Folding
+set foldmethod=indent
+nnoremap <silent> <Space> @=(foldlevel('.')?'za':'l')<CR>
+vnoremap <Space> zf
+autocmd FileType * normal zR
+
 " When vimrc is edited, reload it
 if has("autocmd")
     autocmd bufwritepost .vimrc source $MYVIMRC
