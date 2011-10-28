@@ -169,8 +169,8 @@ nmap <leader>t :NERDTreeToggle<CR>
 nmap <leader>y :FufFileWithCurrentBufferDir<CR>
 
 " Make TComment accessible
-nmap <leader>c <leader>__
-nmap <leader>C <leader>_p
+map <leader>c <leader>__
+map <leader>C <leader>_p
 
 " Mapping for hammer.vim
 map <leader>p :Hammer<CR>
