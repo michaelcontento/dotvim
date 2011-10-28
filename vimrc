@@ -134,10 +134,6 @@ cmap w!! w !sudo tee % >/dev/null
 " Easier linewise reselection
 nmap <leader>v V`]
 
-" Fast quit
-cmap Q qall
-cmap Q! qall!
-
 " And make j,k work
 nnoremap j gj
 nnoremap k gk
