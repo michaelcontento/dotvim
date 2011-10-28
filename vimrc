@@ -1,6 +1,6 @@
 " Install additional scripts via vim-addon-manager
 set runtimepath+=~/.vim/vim-addons/vim-addon-manager
-call vam#ActivateAddons(['tcomment', 'hammer.vim', 'Solarized', 'SuperTab_continued.', 'delimitMate', 'The_NERD_tree', 'FuzzyFinder'])
+call vam#ActivateAddons(['SearchComplete', 'tcomment', 'hammer.vim', 'Solarized', 'SuperTab_continued.', 'delimitMate', 'The_NERD_tree', 'FuzzyFinder'])
 
 " Fix arrow keys in screen/tmux sessions
 if match($TERM, "screen") != -1
@@ -119,11 +119,6 @@ set incsearch
 set showmatch
 set smartcase
 set highlight=lub
-
-" Turn on "very magic" regex status by default for searches.
-" :he /magic for more information
-nnoremap / /\v
-vnoremap / /\v
 
 " Fuck you, manual key
 nnoremap K <nop>
