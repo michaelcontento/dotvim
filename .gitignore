@@ -1,3 +1,4 @@
 vim-addons/*
 !vim-addons/vim-addon-manager
 NERDTreeBookmarks
+.netrwhist
