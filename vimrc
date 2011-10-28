@@ -1,6 +1,6 @@
 " Install additional scripts via vim-addon-manager
 set runtimepath+=~/.vim/vim-addons/vim-addon-manager
-call vam#ActivateAddons(['rest', 'Solarized', 'SuperTab_continued.', 'delimitMate', 'The_NERD_tree', 'FuzzyFinder'])
+call vam#ActivateAddons(['hammer.vim', 'Solarized', 'SuperTab_continued.', 'delimitMate', 'The_NERD_tree', 'FuzzyFinder'])
 
 " Fix arrow keys in screen/tmux sessions
 if match($TERM, "screen") != -1
@@ -166,3 +166,6 @@ let NERDTreeQuitOnOpen=1
 " Mappings for all file navigation plugins
 nmap <leader>t :NERDTreeToggle<CR>
 nmap <leader>y :FufFileWithCurrentBufferDir<CR>
+
+" Mapping for hammer.vim
+map <leader>p :Hammer<CR>
