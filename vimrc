@@ -63,7 +63,7 @@ set guifont=Monaco:h14
 set foldmethod=indent
 nnoremap <silent> <Space> @=(foldlevel('.')?'za':'l')<CR>
 vnoremap <Space> zf
-autocmd FileType * normal zR
+autocmd BufRead,BufNewFile * normal zR
 
 " When vimrc is edited, reload it
 if has("autocmd")
