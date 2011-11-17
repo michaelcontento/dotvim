@@ -69,9 +69,6 @@ nnoremap <silent> <Space> @=(foldlevel('.')?'za':'l')<CR>
 vnoremap <Space> zf
 autocmd BufRead,BufNewFile * normal zR
 
-" Edit vimrc in new tag
-nnoremap <Leader>ev :tabedit $MYVIMRC<CR>
-
 " When vimrc is edited, reload it
 if has("autocmd")
     autocmd bufwritepost .vimrc source $MYVIMRC
@@ -175,6 +172,9 @@ map <Leader><h> :tabnext<CR>
 map <Leader><Left> :tabnext<CR>
 map <Leader><l> :tabprevious<CR>
 map <Leader><Right> :tabprevious<CR>
+
+" Edit vimrc in new tab
+nnoremap <Leader>ev :tabedit $MYVIMRC<CR>
 
 " Configure NERDTree
 let NERDTreeBookmarksFile=$HOME . '/.vim/NERDTreeBookmarks'
