@@ -46,6 +46,10 @@ set tabstop=4
 :imap <Esc>Ol +
 :imap <Esc>OS -
 
+" Fix the backspace
+vnoremap <BS> d
+noremap <BS> dh
+
 " Wrap text instead of being on one line
 set lbr
     
