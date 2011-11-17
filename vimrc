@@ -164,7 +164,9 @@ imap <C-e> <Esc>g$i
 map <C-h> <C-w>h
 map <C-Left> <C-w>h
 map <C-j> <C-w>j
+map <C-Down> <C-w>j
 map <C-k> <C-w>k
+map <C-Up> <C-w>k
 map <C-l> <C-w>l
 map <C-Right> <C-w>l
 
