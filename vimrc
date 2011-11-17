@@ -171,10 +171,10 @@ map <C-l> <C-w>l
 map <C-Right> <C-w>l
 
 " Easy tab navigation
-map <S-h> :tabnext<CR>
-map <S-Left> :tabnext<CR>
-map <S-l> :tabprevious<CR>
-map <S-Right> :tabprevious<CR>
+map <Leader><h> :tabnext<CR>
+map <Leader><Left> :tabnext<CR>
+map <Leader><l> :tabprevious<CR>
+map <Leader><Right> :tabprevious<CR>
 
 " Configure NERDTree
 let NERDTreeBookmarksFile=$HOME . '/.vim/NERDTreeBookmarks'
