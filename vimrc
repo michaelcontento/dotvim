@@ -146,6 +146,14 @@ nmap <leader>v V`]
 nnoremap j gj
 nnoremap k gk
 
+" Center display line after searches
+nnoremap n nzz
+nnoremap N Nzz
+nnoremap * *zz
+nnoremap # #zz
+nnoremap g* g*zz
+nnoremap g# g#zz
+
 " Mac bindings for home/end
 map <C-a> 0
 map <C-e> g$
