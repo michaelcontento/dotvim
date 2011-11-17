@@ -69,6 +69,9 @@ nnoremap <silent> <Space> @=(foldlevel('.')?'za':'l')<CR>
 vnoremap <Space> zf
 autocmd BufRead,BufNewFile * normal zR
 
+" Edit vimrc in new tag
+nnoremap <Leader>ev :tabedit $MYVIMRC<CR>
+
 " When vimrc is edited, reload it
 if has("autocmd")
     autocmd bufwritepost .vimrc source $MYVIMRC
