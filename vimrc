@@ -181,6 +181,9 @@ let NERDTreeBookmarksFile=$HOME . '/.vim/NERDTreeBookmarks'
 let NERDTreeShowBookmarks=1
 let NERDTreeQuitOnOpen=1
 
+" Toggle screen wrapping of long lines 
+nnoremap <Leader>w :set invwrap<Bar>set wrap?<CR>
+
 " Mappings for all file navigation plugins
 nmap <leader>t :NERDTreeToggle<CR>
 nmap <leader>y :FufFileWithCurrentBufferDir<CR>
