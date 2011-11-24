@@ -133,7 +133,7 @@ nnoremap ; :
 " Save when losing focus
 au FocusLost * :wa
 
-" Sudo write
+"Sudo write
 cmap w!! w !sudo tee % >/dev/null
 
 " Easier linewise reselection
@@ -174,12 +174,15 @@ map <Leader><l> :tabprevious<CR>
 map <Leader><Right> :tabprevious<CR>
 
 " Edit vimrc in new tab
-nnoremap <Leader>ev :tabedit $MYVIMRC<CR>
+nnoremap <Leader>ev :split $MYVIMRC<CR>
 
 " Configure NERDTree
 let NERDTreeBookmarksFile=$HOME . '/.vim/NERDTreeBookmarks'
 let NERDTreeShowBookmarks=1
 let NERDTreeQuitOnOpen=1
+
+" Highlight VCS conflict markers
+match ErrorMsg '^\(<\|=\|>\)\{7\}\([^=].\+\)\?$'
 
 " Toggle screen wrapping of long lines 
 nnoremap <Leader>w :set invwrap<Bar>set wrap?<CR>
