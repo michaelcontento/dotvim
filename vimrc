@@ -164,13 +164,6 @@ map <C-h> <C-w>h
 map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
-map <C-Right> <C-w>l
-
-" Easy tab navigation
-map <Leader><h> :tabnext<CR>
-map <Leader><Left> :tabnext<CR>
-map <Leader><l> :tabprevious<CR>
-map <Leader><Right> :tabprevious<CR>
 
 " Edit vimrc in new tab
 nnoremap <Leader>ev :split $MYVIMRC<CR>
