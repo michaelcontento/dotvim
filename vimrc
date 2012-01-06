@@ -157,6 +157,17 @@ map <C-e> g$
 imap <C-a> <Esc>0i
 imap <C-e> <Esc>g$i
 
+" Enable command movement
+map <D-Up> gg
+map <D-Down> G
+imap <D-Up> <Esc>ggi
+imap <D-Down> <Esc>Gi
+
+map <D-Right> <C-e>
+map <D-Left> <C-a>
+imap <D-Right> <C-e>
+imap <D-Left> <C-a>
+
 " Easy buffer navigation
 map <C-h> <C-w>h
 map <C-Left> <C-w>h
