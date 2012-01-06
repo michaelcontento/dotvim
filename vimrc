@@ -136,21 +136,21 @@ nnoremap g* g*zz
 nnoremap g# g#zz
 
 " Mac bindings for home/end
-map <C-a> 0
-map <C-e> g$
 imap <C-a> <Esc>0i
 imap <C-e> <Esc>g$i
+map <C-a> 0
+map <C-e> g$
 
 " Enable command movement
-map <D-Up> gg
-map <D-Down> G
-imap <D-Up> <Esc>ggi
+" TODO: Fix commad-up, command-down and alt-right
 imap <D-Down> <Esc>Gi
-
-map <D-Right> <C-e>
-map <D-Left> <C-a>
-imap <D-Right> <C-e>
 imap <D-Left> <C-a>
+imap <D-Right> <C-e>
+imap <D-Up> <Esc>ggi
+map <D-Down> G
+map <D-Left> <C-a>
+map <D-Right> <C-e>
+map <D-Up> gg
 
 " Easy buffer navigation
 map <C-h> <C-w>h
