@@ -152,13 +152,17 @@ map <D-Left> <C-a>
 map <D-Right> <C-e>
 map <D-Up> gg
 
-" Easy buffer navigation
+" Pane creation and movement
+map <Leader>- :split<CR>
+map <Leader>\| :vsplit<CR>
+
+map <M-Down> <C-w>j
+map <M-Left> <C-w>h
+map <M-Right> <C-w>l
+map <M-Up> <C-w>k
 map <C-h> <C-w>h
-map <C-Left> <C-w>h
 map <C-j> <C-w>j
-map <C-Down> <C-w>j
 map <C-k> <C-w>k
-map <C-Up> <C-w>k
 map <C-l> <C-w>l
 map <C-Right> <C-w>l
 
