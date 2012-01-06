@@ -2,19 +2,6 @@
 set runtimepath+=~/.vim/vim-addons/vim-addon-manager
 call vam#ActivateAddons(['surround', 'SearchComplete', 'tcomment', 'hammer.vim', 'Solarized', 'SuperTab_continued.', 'delimitMate', 'FuzzyFinder'])
 
-" Fix arrow keys in screen/tmux sessions
-if match($TERM, "screen") != -1
-    set term=xterm
-    map OA <Up>
-    map OB <Down>
-    map OC <Right>
-    map OD <Left>
-    map [A <C-Up>
-    map [B <C-Down>
-    map [C <C-Right>
-    map [D <C-Left>
-endif
-
 " This must be first, because it changes other options as side effect
 set nocompatible
 
