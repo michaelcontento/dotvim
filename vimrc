@@ -123,9 +123,6 @@ au FocusLost * :wa
 "Sudo write
 cmap w!! w !sudo tee % >/dev/null
 
-" Easier linewise reselection
-nmap <leader>v V`]
-
 " And make j,k work
 nnoremap j gj
 nnoremap k gk
