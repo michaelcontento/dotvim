@@ -46,6 +46,9 @@ set pastetoggle=<F2>
 " Enable mouse support
 set mouse=a
 
+" Highlight the current line
+set cul
+
 " Some stuff for MacVim
 set guioptions-=T
 set guifont=Monaco:h14
