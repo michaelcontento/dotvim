@@ -177,7 +177,11 @@ map <Leader><Down> <C-w><Down>
 map <Leader><Up> <C-w><Up>
 
 " Tab creation and movement
-" TODO: Define this
+map <S-t> :tabnew<CR>
+map l <S-Left>
+map r <S-Right>
+map <S-Left> :tabnext<CR>
+map <S-Right> :tabprev<CR>
 
 " Edit vimrc in new tab
 nnoremap <Leader>ev :split $MYVIMRC<CR>
