@@ -132,7 +132,7 @@ nnoremap ; :
 " Save when losing focus
 au FocusLost * :wa
 
-"Sudo write
+" Sudo write
 cmap w!! w !sudo tee % >/dev/null
 
 " And make j,k work
@@ -154,28 +154,19 @@ map <C-a> 0
 map <C-e> g$
 
 " Enable command movement
-" TODO: Fix commad-up, command-down and alt-right
-imap <D-Down> <Esc>Gi
+" TODO: Fix commad-up and command-down
 imap <D-Left> <C-a>
 imap <D-Right> <C-e>
-imap <D-Up> <Esc>ggi
-map <D-Down> G
 map <D-Left> <C-a>
 map <D-Right> <C-e>
-map <D-Up> gg
 
-" Pane creation and movement
+" Buffer creation and movement
 map <Leader>- :split<CR>
 map <Leader>\| :vsplit<CR>
+" TODO: Define this 
 
-map <M-Down> <C-w>j
-map <M-Left> <C-w>h
-map <M-Right> <C-w>l
-map <M-Up> <C-w>k
-map <C-h> <C-w>h
-map <C-j> <C-w>j
-map <C-k> <C-w>k
-map <C-l> <C-w>l
+" Tab creation and movement
+" TODO: Define this
 
 " Edit vimrc in new tab
 nnoremap <Leader>ev :split $MYVIMRC<CR>
