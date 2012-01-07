@@ -192,6 +192,7 @@ map <D-Right> <C-e>
 " Buffer creation and movement
 map <Leader>- :split<CR>
 map <Leader>\| :vsplit<CR>
+map <Leader>\ :vsplit<CR>
 map <Leader><Left> <C-w><Left>
 map <Leader><Right> <C-w><Right>
 map <Leader><Down> <C-w><Down>
