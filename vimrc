@@ -171,7 +171,10 @@ map <D-Right> <C-e>
 " Buffer creation and movement
 map <Leader>- :split<CR>
 map <Leader>\| :vsplit<CR>
-" TODO: Define this 
+map <Leader><Left> <C-w><Left>
+map <Leader><Right> <C-w><Right>
+map <Leader><Down> <C-w><Down>
+map <Leader><Up> <C-w><Up>
 
 " Tab creation and movement
 " TODO: Define this
