@@ -153,6 +153,14 @@ imap <C-e> <Esc>g$i
 map <C-a> 0
 map <C-e> g$
 
+" Jump words with alt-arrow (osx style)
+" f = <M-Right>
+" b = <M-Left>
+imap b <Esc>bi
+imap f <Esc><Right>wi
+map b b
+map f w
+
 " Enable command movement
 " TODO: Fix commad-up and command-down
 imap <D-Left> <C-a>
