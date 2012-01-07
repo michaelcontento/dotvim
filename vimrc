@@ -83,6 +83,15 @@ set ttyfast
 set wildmenu
 set wildmode=list:longest
 
+" I really like 80 columns
+set textwidth=80
+set formatoptions=tcrql
+    " t - autowrap to textwidth
+    " c - autowrap comments to textwidth
+    " r - autoinsert comment leader with <Enter>
+    " q - allow formatting of comments with :gq
+    " l - don't format already long lines
+
 " Backup and undo
 set history=1000         
 set nobackup
