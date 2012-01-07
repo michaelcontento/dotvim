@@ -153,18 +153,39 @@ imap <C-e> <Esc>g$i
 map <C-a> 0
 map <C-e> g$
 
+" Introduct new keycodes to vim for <alt-arrows>
+set <F13>=f
+map <F13> <M-Right>
+map! <F13> <M-Right>
+
+set <F14>=b
+map <F14> <M-Left>
+map! <F14> <M-Left>
+
+set <F15>=[1;10C
+map <F15> <S-M-Right>
+map! <F15> <S-M-Right>
+
+set <F16>=[1;10D
+map <F16> <S-M-Left>
+map! <F16> <S-M-Left>
+
+set <F17>=[1;10A
+map <F17> <S-M-Up>
+map! <F17> <S-M-Up>
+
+set <F18>=[1;10B
+map <F18> <S-M-Down>
+map! <F18> <S-M-Down>
+
 " Jump words with alt-arrow (osx style)
-" f = <M-Right>
-" b = <M-Left>
-imap b <Esc>bi
-imap f <Esc><Right>wi
-map b b
-map f w
+map <M-Left> b
+map <M-Right> w
+imap <M-Left> <Esc>bi
+imap <M-Right> <Esc><Right>wi
 
 " Enable command movement
 " TODO: Fix commad-up and command-down
-imap <D-Left> <C-a>
-imap <D-Right> <C-e>
 map <D-Left> <C-a>
 map <D-Right> <C-e>
 
@@ -176,10 +197,15 @@ map <Leader><Right> <C-w><Right>
 map <Leader><Down> <C-w><Down>
 map <Leader><Up> <C-w><Up>
 
+" Buffer movement with <leader> is consitent with tmux but somehow "painful" to
+" use and therefore this alternative :)
+map <M-S-Left> <Leader><Left>
+map <M-S-Right> <Leader><Right>
+map <M-S-Up> <Leader><Up>
+map <M-S-Down> <Leader><Down>
+
 " Tab creation and movement
 map <S-t> :tabnew<CR>
-map l <S-Left>
-map r <S-Right>
 map <S-Left> :tabnext<CR>
 map <S-Right> :tabprev<CR>
 
