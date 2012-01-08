@@ -1,3 +1,13 @@
+**DEPRECATED**
+==============
+
+This repository is *old*, *deprecated* and *no longer used* or event maintained! 
+
+My whole Vim_ configuration was merged in the more general dotfiles_ repository.
+
+.. _dotfiles: https://github.com/michaelcontento/dotfiles 
+.. _Vim: http://www.vim.org
+
 dotvim
 ======
 
