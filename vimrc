@@ -2,6 +2,9 @@
 set runtimepath+=~/.vim/vim-addons/vim-addon-manager
 call vam#ActivateAddons(['surround', 'SearchComplete', 'tcomment', 'hammer.vim', 'Solarized', 'SuperTab_continued.', 'delimitMate', 'FuzzyFinder'])
 
+" TODO: Change vam to vundle => https://github.com/gmarik/vundle
+" TODO: Add vim-pasta plugin => https://github.com/sickill/vim-pasta
+
 " Automatically reload changes if detected
 set autoread
 
