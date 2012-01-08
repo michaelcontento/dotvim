@@ -2,6 +2,12 @@
 set runtimepath+=~/.vim/vim-addons/vim-addon-manager
 call vam#ActivateAddons(['surround', 'SearchComplete', 'tcomment', 'hammer.vim', 'Solarized', 'SuperTab_continued.', 'delimitMate', 'FuzzyFinder'])
 
+" Automatically reload changes if detected
+set autoread
+
+" Writes on make/shell commands
+set autowrite
+
 " Auto insert the comment leader after hitting 'o' / 'O' in Normal mode
 set fo+=o
 
