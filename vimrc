@@ -5,6 +5,9 @@ call vam#ActivateAddons(['surround', 'SearchComplete', 'tcomment', 'hammer.vim',
 highlight OverLength ctermbg=red ctermfg=white guibg=#592929
 match OverLength /\%81v.\+/
 
+" Auto insert the comment leader after hitting 'o' / 'O' in Normal mode
+set fo+=o
+
 " This must be first, because it changes other options as side effect
 set nocompatible
 
