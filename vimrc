@@ -11,6 +11,9 @@ set fo+=o
 " This must be first, because it changes other options as side effect
 set nocompatible
 
+" Split line (opposite to S-J joining line) 
+nnoremap <silent> <C-J> gEa<CR><ESC>ew 
+
 " Hide buffers instead of closing
 set hidden
 
