@@ -2,9 +2,6 @@
 set runtimepath+=~/.vim/vim-addons/vim-addon-manager
 call vam#ActivateAddons(['surround', 'SearchComplete', 'tcomment', 'hammer.vim', 'Solarized', 'SuperTab_continued.', 'delimitMate', 'FuzzyFinder'])
 
-highlight OverLength ctermbg=red ctermfg=white guibg=#592929
-match OverLength /\%81v.\+/
-
 " Auto insert the comment leader after hitting 'o' / 'O' in Normal mode
 set fo+=o
 
